@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Preethi Mathavan</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="css/template.css">
+<link rel="stylesheet" type="text/css" href="css/elements.css">
+<script type="text/javascript" src="js/navigate.js"></script>
+</head>
+
+
+
+
+<body>
+
+
+<div class="row">
+  <div class="column left" >
+     <img class="photo"src="images/profile_photo.jpg" alt="Preethi" >
+     <div>
+       <ul class="topics">
+        <li><button class="menu" onclick='home();'>Home</button></li>
+        <li><button class="menu" onclick='education();'>Education</button></li>
+        <li><button class="menu" onclick='skills();'>Skills</button></li>
+        <li><button class="menu" onclick='projects();'>Projects</button></li>
+        <li><button class="menu" onclick='myworks();'>My works</button></li>
+        <li><button class="menu" onclick='contact();'>Contact</button></li>
+         
+       </ul>
+     </div> 
+  </div>
+
+
+  <div class="column right" style="background-color:#ffff;" id="right">
+    <div class="mySlides home" id="home">
+      
+      <span class="font1">Hello. I am <span class="font2">Preethi Mathavan</span></span>
+      <br>Intern(ID:765740)
+      <p><br></p>
+      <p class="font3">I am an undergraduate computer science engineering student , an emerging full stack developer and a code lover.My career objective is to start a career in a healthy environment where I will be motivated to learn and improve myself.</p>
+      
+    </div>
+    
+    <div class="mySlides" id="education">
+       <table border="0" cellspacing="25" class="education">
+        <tr><td class="title_font">Education<tr>
+         <tr>
+           <td class="time">2015-Present</td>
+           <td>B.E Computer Science<br>Kongu Engineering College<br>Cgpa - 7.82</td>
+         </tr>
+         <tr>
+           <td class="time">2013-2015</td>
+           <td>Higher Secondary school<br>U.R.C Palaniammal Matric Hr Sec School<br>Percentage - 92.25</td>
+         </tr>
+         <tr>
+           <td class="time">2012-2013</td>
+           <td>Secondary school<br>U.R.C Palaniammal Matric Hr Sec School<br>Percentage - 96</td>
+         </tr>
+       </table>
+    </div>  
+
+    <div class="mySlides" id="skill">
+            <p class="title_font">Skills</p>
+             <p>C and C++</p>
+             <div class="container">
+              <div class="skills c_cpp"></div>
+            </div>
+            <p>JAVA</p>
+            <div class="container">
+              <div class="skills java"></div>
+            </div>
+            <p>PYTHON</p>
+            <div class="container">
+              <div class="skills python"></div>
+            </div>
+            <p>MYSQL</p>
+            <div class="container">
+              <div class="skills mysql"></div>
+            </div>
+            <p>HTML</p>
+            <div class="container">
+              <div class="skills html"></div>
+            </div>
+            <p>CSS and JAVASCRIPT</p>
+            <div class="container">
+              <div class="skills js"></div>
+            </div>
+            <p>PHP</p>
+            <div class="container">
+              <div class="skills php"></div>
+            </div> 
+          </div>
+
+    <div class="mySlides" id="project">
+      <p class="title_font">Projects</p>
+      <p class="prjct_tit" >Weed identification in Soybean crops using Covnets</p>
+      <p class="prjct_des" >Weeds are undesirable plants that grow in agricultural cropfields and will reduce the yield.We used the convolutional neural network for identifying weed among the dataset of soil, broadleaf, soybean and grass.Python was used to convert the image dataset into array ,extract features from the image and train the model.</p>
+      <p class="prjct_tit" >One credit management system</p>
+      <p class="prjct_des" >It is a webpage application for maintaining the list of one credit courses, details of students registered and to be extended for marking attendance. </p>
+    </div>
+
+    <div class="mySlides" id="mywork">
+      <p class="title_font">Certification</p>
+      <ul><li class="prjct_des">Business English Certificate Vantage</li></ul>
+      <p class="title_font">Languages</p>
+      <ul><li class="prjct_des">English</li></ul>
+      <ul><li class="prjct_des">Tamil</li></ul>
+      <ul><li class="prjct_des">Hindi</li></ul>
+    </div>
+
+    <div class="mySlides contact" id="contact">
+      <p class="title_font">Contact</p>
+      <img src="images/phone.jpeg" width="50px" height="50px">
+      <span class="prjct_des">+919944429063</span><br>
+      <img src="images/email.jpeg" width="50px" height="50px">
+      <span class="prjct_des">preethimadhavan07@gmail.com</span><br>
+      <img src="images/location.jpeg" width="50px" height="50px">
+      <span class="prjct_des">2/125,Sanjay Nagar,Erode-638011,Tamilnadu</span><br>
+
+    </div>
+    <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="next" onclick="plusDivs(1)">&#10095;</button>
+
+  </div>
+</div>
+
+  
+</div>
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+
+
+</script>
+
+</body>
+</html>
